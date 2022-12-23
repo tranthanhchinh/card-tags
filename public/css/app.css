@@ -24,7 +24,7 @@ html {
 body {
     font-family: montserrat, arial, verdana;
     color: #fff;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(90deg,#e52e71,#ff8a00);
 }
 
