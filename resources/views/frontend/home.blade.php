@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-3">
                 <p>Hôm nay</p>
-                <p>10</p>
+                <p>100</p>
                 <p>Lượt xem</p>
             </div>
             <div class="col-md-3">
