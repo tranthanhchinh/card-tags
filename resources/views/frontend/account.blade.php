@@ -1,7 +1,7 @@
 @extends('welcome')
 @section('content')
     <div class="page-card">
-        <h3>Hồ sơ của bạn</h3>
+      <h1 class="title-page">Hồ sơ của bạn</h1>
         <form action="/account" method="POST" />
         @csrf
         <div class="box-card">
@@ -19,9 +19,9 @@
             </div>
 
         </div>
-        <div class="action">
-            <a href="/" class="btn btn-primary">Hủy bỏ</a>
-            <button type="submit" class="btn btn-primary">Cập nhật</button>
+        <div class="btn-container action"> 
+            <a href="/" class="btn-border">Hủy bỏ</a>
+            <button type="submit" class="btn-border">Cập nhật</button>
         </div>
         </form>
     </div>

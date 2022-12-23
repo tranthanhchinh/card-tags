@@ -1,7 +1,7 @@
 @extends('welcome')
 @section('content')
     <div class="page-card">
-        <h3>Thông tin thẻ</h3>
+        <h1 class="title-page">Thông tin thẻ</h1>
         <form action="/card" method="POST" enctype="multipart/form-data"/>
         @csrf
         <div class="box-card">
@@ -40,9 +40,9 @@
                 <img id="view-avatar" src="/uploads/{{ $cardDetail->avatar }}" width="80px" height="80px"/>
             </div>
         </div>
-        <div class="action">
-            <a href="/" class="btn btn-primary">Hủy bỏ</a>
-            <button type="submit" class="btn btn-primary">Cập nhật</button>
+        <div class="btn-container action">
+            <a href="/" class="btn-border">Hủy bỏ</a>
+            <button type="submit" class="btn-border">Cập nhật</button>
         </div>
         </form>
     </div>

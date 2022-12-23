@@ -1,7 +1,7 @@
 @extends('welcome')
 @section('content')
     <div class="page-card">
-        <h3>Chọn thẻ của bạn</h3>
+        <h1 class="title-page">Chọn thẻ của bạn</h1>
         <form action="/tags" method="POST"/>
         @csrf
         <div class="box-card">
@@ -21,9 +21,9 @@
             </div>
             <input type="hidden" name="theme_id" value="{{ $theme }}">
         </div>
-        <div class="action">
-            <a href="/" class="btn btn-primary">Hủy bỏ</a>
-            <button type="submit" class="btn btn-primary">Cập nhật</button>
+        <div class="btn-container action">
+            <a href="/" class="btn-border">Hủy bỏ</a>
+            <button type="submit" class="btn-border">Cập nhật</button>
         </div>
         </form>
     </div>

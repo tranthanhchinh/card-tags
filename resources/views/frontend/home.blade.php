@@ -4,27 +4,35 @@
         <!-- MultiStep Form -->
         <div class="row">
             <div class="col-md-3">
-                <p>Hôm nay</p>
-                <p>100</p>
-                <p>Lượt xem</p>
+                <div class="profile-counter">
+                    <span>Hôm nay</span>
+                    <strong>100</strong>
+                    <small>Lượt xem</small>
+                </div>
             </div>
             <div class="col-md-3">
-                <p>Hôm nay</p>
-                <p>10</p>
-                <p>Lượt xem</p>
+                <div class="profile-counter">
+                    <span>Hôm nay</span>
+                    <strong>100</strong>
+                    <small>Lượt xem</small>
+                </div>
             </div>
             <div class="col-md-3">
-                <p>Hôm nay</p>
-                <p>10</p>
-                <p>Lượt xem</p>
+                <div class="profile-counter">
+                    <span>Hôm nay</span>
+                    <strong>100</strong>
+                    <small>Lượt xem</small>
+                </div>
             </div>
             <div class="col-md-3">
-                <p>Hôm nay</p>
-                <p>10</p>
-                <p>Lượt xem</p>
+                <div class="profile-counter">
+                    <span>Hôm nay</span>
+                    <strong>100</strong>
+                    <small>Lượt xem</small>
+                </div>
             </div>
         </div>
-        <h3>Thẻ của bạn</h3>
+        <h1 class="title-page">Thẻ của bạn</h1>
         <div class="box-card">
             @if($cardDetail->avatar)
                 <img src="/uploads/{{ $cardDetail->avatar }}" width="50px" height="50px"/>
@@ -52,9 +60,9 @@
             @endif
 
         </div>
-        <div class="btn-action">
-            <a href="/viewer/{{ $cardDetail->slug }}" class="btn btn-primary">Xem thẻ</a>
-            <a href="/tags" class="btn btn-primary">Đổi thẻ</a>
+        <div class="btn-container"> 
+            <a href="/viewer/{{ $cardDetail->slug }}" class="btn-border">Xem thẻ</a>
+            <a href="/tags" class="btn-border">Đổi thẻ</a>
         </div>
         <!-- /.MultiStep Form -->
     </div>

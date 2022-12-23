@@ -1,7 +1,7 @@
 @extends('welcome')
 @section('content')
     <div class="page-register shadow-lg p-3 mb-5 bg-white rounded">
-        <h3>Register</h3>
+        <h1 class="title-page">Đăng ký</h1>
 
         <form id="msform" action="/register" method="POST" enctype="multipart/form-data" >
             @csrf

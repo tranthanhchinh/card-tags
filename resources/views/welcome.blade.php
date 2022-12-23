@@ -26,31 +26,39 @@
 
     </head>
     <body class="antialiased">
-          <div class="container">
+        <div class="container">
               @if(Session::get('username') )
               <div class="header">
-                  Xin chào {{ Session::get('username') }}
-                  <a href="/logout">Logout</a>
+                    <div class="header-info">
+                        <span>Xin chào, {{ Session::get('username') }}</span>
+                        <a href="/logout">( Đăng xuất )</a>
+                    </div>
+                    <div class="header-language">
+                        VI    
+                    </div>
               </div>
               @endif
               <div class="main">
                   @yield('content')
               </div>
               <div class="clearfix"></div>
+        </div>      
                   @if(Session::get('username') )
-              <div class="footer">
-                  <div class="menu">
+        <div class="footer">
+            <div class="container">
+                <div class="menu">
                       <ul>
-                          <li><a href="/">Thẻ của tôi</a></li>
-                          <li><a href="/card">Mẫu thẻ</a></li>
-                          <li>Logo</li>
-                          <li><a href="/qrcode">Mã QR</a></li>
-                          <li><a href="/account">Tài khoản</a></li>
+                          <li><a href="/card"><i class="fa-solid fa-address-card"></i><span>Thẻ của tôi</span></a></li>
+                          <li><a href="/tags"><i class="fa-sharp fa-solid fa-palette"></i><span>Mẫu thẻ</span></a></li>
+                          <li><a href="/"><img src="{{ asset('img/logo.png') }}"></a></li>
+                          <li><a href="/qrcode"><i class="fa-solid fa-qrcode"></i><span>Mã QR</span></a></li>
+                          <li><a href="/account"><i class="fa-regular fa-user"></i><span>Tài khoản</span></a></li>
                       </ul>
-                  </div>
-              </div>
+                </div>
+            </div>
+        </div>
                   @endif
-          </div>
+          
           <script>
               @if(Session::has('message'))
                   toastr.options =
