@@ -52,6 +52,10 @@ h1.title-page {
     margin: 0 5px;
 }
 
+.main {
+    padding-bottom: 80px;
+  }
+
 /* header */
 
 .header {
@@ -110,17 +114,33 @@ h1.title-page {
 
 /* Login */
 
+.remember {
+    color: #858585;
+    font-size: 15px;
+  }
+
+#reg-text {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+
 a.reset-text {
     color: #fff;
     text-align: center;
     display: block;
-    padding: 20px 0;
+    padding: 5px 0 20px 0;
     font-size: 13px;
 }
 
 .btn-container {
     text-align: center;
 }
+
+.logo-home img {
+    width: 80px;
+  }
 
 /* Home */
 

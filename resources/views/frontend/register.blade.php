@@ -1,6 +1,6 @@
 @extends('welcome')
 @section('content')
-    <div class="page-register shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="page-register">
         <h1 class="title-page">Đăng ký</h1>
 
         <form id="msform" action="/register" method="POST" enctype="multipart/form-data" >
