@@ -167,6 +167,17 @@ a.reset-text {
 }
 
 
+/* Card info */
+
+img#view-avatar {
+    border-radius: 100%;
+    margin-top: 20px;
+    border: 2px solid #FFBE5C;
+}
+
+/* Responsive */
+
+
 @media (min-width: 320px) {
     .menu ul li a {
         color: #818181;
@@ -184,6 +195,10 @@ a.reset-text {
         display: block;
         text-align: center;
         font-size: 9px;
+    }
+
+    .page-register {
+        padding-top: 100px;
     }
   
   }
@@ -205,6 +220,10 @@ a.reset-text {
         text-align: center;
         font-size: 11px;
     }
+
+    .page-register {
+        padding-top: 100px;
+    }
   
   }
   @media (min-width: 992px) {
@@ -225,6 +244,10 @@ a.reset-text {
         text-align: center;
         font-size: 11px;
     }
+
+    .page-register {
+        padding-top: 200px;
+    }
    
   }
   @media (min-width: 1200px) {
@@ -244,6 +267,10 @@ a.reset-text {
         display: block;
         text-align: center;
         font-size: 11px;
+    }
+
+    .page-register {
+        padding-top: 200px;
     }
     
   
@@ -267,11 +294,20 @@ a.reset-text {
         text-align: center;
         font-size: 11px;
     }
+
+    .page-register {
+        padding-top: 200px;
+    }
     
   }
 
 
 /*form styles*/
+
+.form-group {
+    margin-bottom: 15px;
+}
+
 #msform {
     text-align: center;
     position: relative;
